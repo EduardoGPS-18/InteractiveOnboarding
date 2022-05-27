@@ -1,8 +1,8 @@
 const String _onboardingPath = 'assets/onboarding';
 
 enum OnboardImages {
-  peopleWalking(path: "$_onboardingPath/images/people_walking.png"),
-  peopleOnCellPhone(path: "$_onboardingPath/images/person_on_cell_phone.png"),
+  personWalking(path: "$_onboardingPath/images/person_walking.png"),
+  personOnCellPhone(path: "$_onboardingPath/images/person_on_cell_phone.png"),
   peoplesOnCellPhone(path: "$_onboardingPath/images/people_on_cell_phone.png");
 
   final String path;

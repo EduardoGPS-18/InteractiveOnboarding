@@ -7,6 +7,7 @@ class AppButton extends StatelessWidget {
   final Widget child;
   final Color color;
   final double fillAmount;
+  final bool? animateHorizontal;
 
   const AppButton({
     Key? key,
@@ -14,22 +15,35 @@ class AppButton extends StatelessWidget {
     required this.child,
     required this.color,
     required this.fillAmount,
+    this.animateHorizontal,
   }) : super(key: key);
 
-  factory AppButton.primary({required VoidCallback? onTap, required Widget child, double fillAmount = 1000}) {
+  factory AppButton.primary({
+    required VoidCallback? onTap,
+    required Widget child,
+    double fillAmount = 1000,
+    bool? animateHorizontal,
+  }) {
     return AppButton(
       color: AppColors.purple,
       onTap: onTap,
       fillAmount: fillAmount,
+      animateHorizontal: animateHorizontal,
       child: child,
     );
   }
 
-  factory AppButton.secondary({required VoidCallback? onTap, required Widget child, double fillAmount = 1000}) {
+  factory AppButton.secondary({
+    required VoidCallback? onTap,
+    required Widget child,
+    double fillAmount = 1000,
+    bool? animateHorizontal,
+  }) {
     return AppButton(
       color: AppColors.blackWithOpacity,
       onTap: onTap,
       fillAmount: fillAmount,
+      animateHorizontal: animateHorizontal,
       child: child,
     );
   }
@@ -43,13 +57,15 @@ class AppButton extends StatelessWidget {
       child: Ink(
         height: 52,
         child: Stack(
+          alignment: animateHorizontal == false ? Alignment.bottomCenter : Alignment.centerLeft,
           children: [
             Container(
               decoration: BoxDecoration(
                 color: color,
                 borderRadius: BorderRadius.circular(16),
               ),
-              width: fillAmount,
+              width: animateHorizontal == true ? fillAmount : null,
+              height: animateHorizontal == false ? fillAmount : null,
             ),
             child
           ],
