@@ -1,16 +1,21 @@
-# onboarding_interaction
+# Onboarding Interaction
 
-A new Flutter project.
+This project is an project developed focusing in build an UI with animations
 
-## Getting Started
+## Runing this project
 
-This project is a starting point for a Flutter application.
+You'll need to install dependencies with:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get && flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Its recomended use FVM to setting up the correct version,
+To setting up with fvm:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+fvm install && fvm flutter pub get
+```
+
+APPLICATION:
+![App working](./animations_app.gif)
