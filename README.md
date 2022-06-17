@@ -20,5 +20,5 @@ fvm install && fvm flutter pub get
 ## Application
 
 <div align="center" width="100%">
-  <img src="./expected_app.gif" height=400 width=300 title="Referençe"></img><span></span><img src="./animations_app.gif" height=400 width=300 title="Result"></img>
+  <img src="./expected_app.gif" height=500 width=300 title="Reference"></img><span>   </span><img src="./animations_app.gif" height=500 width=300 title="Result"></img>
 </div>
