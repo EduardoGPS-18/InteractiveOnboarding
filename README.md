@@ -19,5 +19,5 @@ fvm install && fvm flutter pub get
 
 <br>
 <div align="center" width="100%">
-  ![App working](./animations_app.gif)
+  <img src="./animations_app.gif"></img>
 </div>
