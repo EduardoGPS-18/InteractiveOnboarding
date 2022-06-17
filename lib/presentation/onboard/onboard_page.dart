@@ -69,7 +69,6 @@ class _OnboardPageState extends State<OnboardPage> with SingleTickerProviderStat
     if (controller?.isAnimating == true || opacityController?.isAnimating == true) return;
     val++;
     if (val > 2) {}
-    print('CUR $currentImage');
     if (currentImage + 1 > 2) {
       showAll = false;
       setState(() {});
@@ -83,7 +82,6 @@ class _OnboardPageState extends State<OnboardPage> with SingleTickerProviderStat
       if (status == AnimationStatus.dismissed) {
         hasUpdated = false;
       }
-      print(status);
     });
     loginButtonFillController?.animateBack(0);
 
