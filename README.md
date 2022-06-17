@@ -21,3 +21,4 @@ fvm install && fvm flutter pub get
 <div align="center" width="100%">
   <img src="./animations_app.gif"></img>
 </div>
+![Expected](https://dribbble.com/shots/14861156-App-Onboarding-Interaction)
