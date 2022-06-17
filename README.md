@@ -17,5 +17,5 @@ To setting up with fvm:
 fvm install && fvm flutter pub get
 ```
 
-APPLICATION:
+APPLICATION:<br>
 ![App working](./animations_app.gif)
