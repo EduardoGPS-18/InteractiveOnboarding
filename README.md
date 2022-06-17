@@ -20,9 +20,11 @@ fvm install && fvm flutter pub get
 <br>
 <div align="center" width="100%">
   <a href="https://dribbble.com/shots/14861156-App-Onboarding-Interaction" target=”_blank”>
-    <p>Inspiration</p>
+    <p>Inspiration: Dribbble/App-Onboarding-Interaction</p>
   </a>
+  <p>Result</p>
 </div>
+
 <div align="center" width="100%">
   <img src="./animations_app.gif"></img>
 </div>
